@@ -2,6 +2,6 @@
 sources:
   - name: demo
     database: demo
-    schema : deo_schema
+    schema : demo_schema
     tables:
       - name: bike
