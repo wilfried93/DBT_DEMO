@@ -1,0 +1,7 @@
+
+sources:
+  - name: demo
+    database: demo
+    schema : deo_schema
+    tables:
+      - name: bike
