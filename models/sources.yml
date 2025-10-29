@@ -2,6 +2,11 @@
 sources:
   - name: demo
     database: demo
-    schema : deo_schema
+    schema : demo_schema
     tables:
       - name: bike
+      - name: weather
+      - name : station_dimension
+      - name: date_dimension
+      - name : trip_fact
+      - name: stg_bike
