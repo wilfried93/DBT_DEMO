@@ -1,6 +1,3 @@
-{{ config(materialized='table')}}
-
-
 with bike as (
 
     select 
@@ -9,7 +6,7 @@ with bike as (
     start_lat as station_lat,
     start_lng as station_lng
     
-    from {{ source('demo', 'bike') }}
+    from {{ ref('stg_bike') }}
 )
 
 select * from bike

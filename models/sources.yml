@@ -6,3 +6,7 @@ sources:
     tables:
       - name: bike
       - name: weather
+      - name : station_dimension
+      - name: date_dimension
+      - name : trip_fact
+      - name: stg_bike

@@ -1,5 +1,3 @@
-{{ config(materialized='table')}}
-
 with CTE AS (
 
 select
@@ -12,7 +10,7 @@ dayname(to_timestamp(STARTED_AT)) as day_name_started_at,
 
 {{ get_day('STARTED_AT')}} as day_name_startes_at
 
-from {{ source('demo', 'bike') }}
+from {{ ref('stg_bike') }}
 -- remove the first line is exist with the filter
 --where STARTED_AT != 'startes_at'
 )
